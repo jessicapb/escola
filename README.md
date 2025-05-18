@@ -1,3 +1,50 @@
+# 📘 Escola FP – Gestió Acadèmica
+
+Aplicació web per gestionar les unitats formatives, mòduls, professors i alumnes d'una escola de formació professional. S'utilitza una API REST en Laravel i una interfície HTML + JavaScript per a operacions CRUD bàsiques.
+
+---
+
+## 🛠️ Tecnologies utilitzades
+
+- **Laravel 10** – Backend API RESTful
+- **JavaScript (Vanilla)** – Frontend amb peticions `fetch`
+- **HTML5 + Tailwind CSS** – Interfície d'usuari
+- **Vite** – Compilador d'estils i JS
+- **MySQL** – Base de dades
+
+---
+
+## 🚀 Funcionalitats
+
+- 🔍 Buscar **unitats formatives**, **mòduls**, **professors** i **alumnes** per nom
+- ➕ Afegir nous **elements** amb validació (nom, descripció o cognoms)
+- ❌ Eliminar **unitats**, **mòduls**, **professors** i **alumnes** amb confirmació
+- ⚙️ Peticions asíncrones mitjançant `fetch` sense recarregar la pàgina
+- 📄 Validació bàsica al **client (JS)** i al **servidor (Laravel)**
+
+---
+
+## 📁 Estructura del projecte
+
+```plaintext
+escola/
+├── app/
+│   └── Http/Controllers/
+│       ├── UnitatsFormativesController.php
+│       ├── ModulController.php
+│       ├── ProfessorController.php
+│       └── AlumnesController.php
+├── public/
+│   └── index.html (o vista generada)
+├── routes/
+│   └── api.php (conté les rutes de l'API)
+├── resources/
+│   └── js/ (scripts de frontend amb fetch)
+├── database/
+│   └── migrations/ (estructura de la base de dades)
+├── .env
+└── README.md
+--------------------------
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
