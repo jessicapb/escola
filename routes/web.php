@@ -30,3 +30,4 @@ Route::get('/unitatsformatives', function () {
     $unitatsformatives = \App\Models\UnitatsFormatives::all();
     return view('unitatsformatives', compact('unitatsformatives'));
 });
+
